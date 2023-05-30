@@ -1,0 +1,32 @@
+2023-01-24T17:36:52.297+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-01-24T17:36:52.297+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order, profiles=[dev], label=null, version=ec3a8a2853bf88472957a22c422066d3072ac90a, state=null
+2023-01-24T17:36:52.298+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-01-24T17:36:52.298+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order, profiles=[dev], label=null, version=ec3a8a2853bf88472957a22c422066d3072ac90a, state=null
+2023-01-24T17:36:54.664+05:30  INFO 5016 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2023-01-24T17:36:56.259+05:30  INFO 5016 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=order, profiles=[default], label=null, version=ec3a8a2853bf88472957a22c422066d3072ac90a, state=null
+2023-01-24T17:36:56.259+05:30  INFO 5016 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}]
+2023-01-24T17:36:56.269+05:30  INFO 5016 --- [restartedMain] com.tsg.bayada.joy.BayadaApplication       : The following 1 profile is active: "dev"
+2023-01-24T17:36:56.272+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2023-01-24T17:36:56.273+05:30  INFO 5016 --- [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order, profiles=[dev], label=null, version=ec3a8a2853bf88472957a22c422066d3072ac90a, state=null
+2023-01-24T17:36:56.592+05:30  INFO 5016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24T17:36:56.607+05:30  INFO 5016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2023-01-24T17:36:56.664+05:30  INFO 5016 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b4dc1-85d7-36b9-af74-0b2a120be21a
+2023-01-24T17:36:56.903+05:30  INFO 5016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-01-24T17:36:56.907+05:30  INFO 5016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-24T17:36:56.909+05:30  INFO 5016 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-01-24T17:36:56.972+05:30  INFO 5016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-24T17:36:56.972+05:30  INFO 5016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 699 ms
+2023-01-24T17:36:57.245+05:30  INFO 5016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-01-24T17:36:57.285+05:30  INFO 5016 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7144b3ee
+2023-01-24T17:36:57.286+05:30  INFO 5016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-01-24T17:36:57.288+05:30  INFO 5016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-24T17:36:57.290+05:30  WARN 5016 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-24T17:36:57.294+05:30  INFO 5016 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-01-24T17:36:57.328+05:30  INFO 5016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-24T17:36:57.329+05:30  INFO 5016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-24T17:36:57.548+05:30  WARN 5016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-24T17:36:58.078+05:30  WARN 5016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-01-24T17:36:58.766+05:30  INFO 5016 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path ''
+2023-01-24T17:36:58.793+05:30  INFO 5016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2023-01-24T17:36:59.405+05:30  INFO 5016 --- [restartedMain] com.tsg.bayada.joy.BayadaApplication       : Started OrderApplication in 11.159 seconds (process running for 562.918)
+2023-01-24T17:36:59.408+05:30  INFO 5016 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

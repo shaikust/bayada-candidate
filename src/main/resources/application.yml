@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri : mongodb+srv://muhammedshaik1999:shaik%40786@oktadb.szvadsm.mongodb.net/?retryWrites=true&w=majority
+      database : Auth1
+
+server:
+  port : 9000
