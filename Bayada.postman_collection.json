@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "a3be4f49-55dd-4adf-8eb1-1c31b366b901",
+		"name": "Bayada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userType\": \"CANDIDATE\",\r\n  \"userFName\": \"kichu\",\r\n  \"userMName\": \"phol\",\r\n  \"userLName\": \"Smith\",\r\n  \"email\": \"kichu.phol@example.com\",\r\n  \"phone\": \"1234567890\",\r\n  \"primaryCommunication\":\"EMAIL\",\r\n  \"jobs\": [\"Job A\", \"Job B\"],\r\n  \"screening\": [\r\n    {\r\n      \"question\": \"What is your favorite color?\",\r\n      \"answers\": [\"Red\", \"Blue\", \"Green\"]\r\n    },\r\n    {\r\n      \"question\": \"How did you hear about us?\",\r\n      \"answers\": [\"Referral\"]\r\n    }\r\n  ],\r\n  \"interviewType\": \"CALL\",\r\n  \"interviewEligibility\": \"NO\",\r\n  \"zip\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/candidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get candidate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/candidate/1bd1e171",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"candidate",
+						"1bd1e171"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update candidate",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1bd1e171\",\r\n    \"userType\": \"CANDIDATE\",\r\n    \"userFName\": \"Machu\",\r\n    \"userMName\": \"phol\",\r\n    \"userLName\": \"Smith\",\r\n    \"email\": \"ddddddddddd\",\r\n    \"phone\": \"ddd7890\",\r\n    \"primaryCommunication\": \"EMAIL\",\r\n    \"jobs\": [\r\n        \"Job A\",\r\n        \"Job B\"\r\n    ],\r\n    \"screening\": [\r\n        {\r\n            \"answers\": [\r\n                \"Red\",\r\n                \"Blue\",\r\n                \"Green\"\r\n            ],\r\n            \"question\": \"What is your favorite color?\"\r\n        },\r\n        {\r\n            \"answers\": [\r\n                \"Referral\"\r\n            ],\r\n            \"question\": \"How did you hear about us?\"\r\n        }\r\n    ],\r\n    \"interviewType\": \"CALL\",\r\n    \"interviewEligibility\": \"NO\",\r\n    \"zip\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/candidate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
